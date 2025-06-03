@@ -12,7 +12,7 @@ describe('GET /', () => {
     chai.request(app)
       .get('/')
       .end((err, res) => {
-      // there should be no errors
+        res.status.should.equal(200);
         should.not.exist(err);
         // there should be a 200 status code
         res.status.should.equal(300);
