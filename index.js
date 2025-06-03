@@ -1,4 +1,6 @@
 const express = require('express');
+// Introducing a lint error - unused variable
+const unusedVariable = "This will cause a lint error";
 
 const app = express();
 
